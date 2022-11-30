@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf8">
+    <script src="socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.14/p5.js"></script>
+    <script src="script.js"></script>
+	      <style>
+        #legend {position: absolute;top: 0;right: 0;width: 800px;} .legend-color {width: 30px;height: 30px;} td {border: 1px solid black; font-size: 14px; padding-left: 5px;}
+    </style>
+</head>
+<body id="myBody" bgcolor="#ffef3b">
+    <div>
+        <div>
+            <p style="display: block;"> Events:</p>
+            <p style="display: inline-block;">Change Energy all:</p>
+            <button onclick="addEnergy()">+1</button>
+            <button onclick="removeEnergy()">-1</button>
+        </div>
+        <br>
+        <div id="buttons">
+            <input id="winter" type="button" value="Winter" onclick="winterCall()"/>
+            <input id="summer" type="button" value="Summer" onclick="summer()" />
+    </div>
+</p>
+</body>
+</html>
